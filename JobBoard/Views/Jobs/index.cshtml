@@ -24,10 +24,7 @@
     <ul>
       @foreach (Jobs newJob in Model)
       {
-        <li> <h3>Title: @newJob.Title</h3></li>
-          <p>Job description: @newJob.Description</p>
-          <p><h5>Contact information</h5> - @newJob.Contact</p>
-        
+        <li><h3>Title: <a href="/jobs/details">@newJob.Title</a></h3></li>
       }
     </ul>
     <a href="/">Go Back</a>

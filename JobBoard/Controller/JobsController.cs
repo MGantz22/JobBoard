@@ -26,6 +26,13 @@ namespace JobBoard.Controllers
     Jobs newJob = new Jobs(title, description, contact);
       return RedirectToAction("Index");
     }
+    
+    [HttpGet("/jobs/details")]
+    public ActionResult Details(string title, string description, string contact)
+    {
+    Jobs newJob = new Jobs(title, description, contact);
+      return View();
+    }
 
   }
 }
