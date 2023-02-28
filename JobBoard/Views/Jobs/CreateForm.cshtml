@@ -12,13 +12,16 @@
   <body>
     <h1>Ready for to make a job posting? fill out this form.</h1>
     <form action="/jobs" method="post">
+    <label for="title">title of the job</label>
+      <input type="text" name="title" id="title" required>
+      <br>
       <label for="description">Describe the job</label>
       <input type="text" name="description" id="description" required>
-    
-    
-    
-    
+      <br>
+      <label for="contact">Please enter your contact information</label>
+      <input type="text" name="contact" id="contact" required>
       <button type="submit">Go!</button>
     </form>
+        <a href="/">Go Back</a>
   </body>
 </html>

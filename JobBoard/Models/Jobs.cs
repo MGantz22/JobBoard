@@ -4,12 +4,16 @@ namespace JobBoard.Models
 {
   class Jobs
   {
+    public string Title { get; set; }
     public string Description { get; set; }
+    public string Contact { get; set; }
     private static List<Jobs> _instances = new List<Jobs> {};
 
-    public Jobs(string description)
+    public Jobs(string title, string description, string contact)
     {
+      Title = title;
       Description = description;
+      Contact = contact;
       _instances.Add(this);
     }
 
